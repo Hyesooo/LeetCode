@@ -2,21 +2,20 @@ class Solution {
     public int[] asteroidCollision(int[] asteroids) {
         Stack<Integer> stack = new Stack<>();
 
-       for (int a : asteroids) {
-            collision: {
-                // 직전 소행성이 우측전진, 새로 들어올 소행성이 좌측전진할 때만 충돌
-                while (!stack.isEmpty() && a < 0 && stack.peek() > 0) {
-                    if (-a > stack.peek()) {
-                        stack.pop();
-                        continue;
-                    } else if (-a == stack.peek()) { 
-                        stack.pop();
-                    }
-                    a = 0; 
-                    break collision;
+       for (int newbie : asteroids) {
+            // 직전 소행성이 우측전진, 새로 들어올 소행성이 좌측전진할 때만 충돌
+            while (!stack.isEmpty() && newbie < 0 && stack.peek() > 0) {
+                if (-newbie > stack.peek()) {
+                    stack.pop();
+                    continue;
+                } else if (-newbie == stack.peek()) { 
+                    stack.pop();
+                    newbie = 0;
+                } else{
+                    newbie = 0;
                 }
-                if (a != 0) stack.push(a); 
             }
+            if (newbie != 0) stack.push(newbie); 
         }
 
         int[] result = new int[stack.size()];
