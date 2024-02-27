@@ -7,7 +7,6 @@ class Solution {
             while (!stack.isEmpty() && newbie < 0 && stack.peek() > 0) {
                 if (-newbie > stack.peek()) {
                     stack.pop();
-                    continue;
                 } else if (-newbie == stack.peek()) { 
                     stack.pop();
                     newbie = 0;
