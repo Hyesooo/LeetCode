@@ -42,8 +42,13 @@ LeetCode 75 문제들은 소프트웨어 개발자가 되기 위한 기술 면�
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/Hyesooo/LeetCode/tree/master/0011-container-with-most-water) |
+| [0125-valid-palindrome](https://github.com/Hyesooo/LeetCode/tree/master/0125-valid-palindrome) |
 ## Greedy
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/Hyesooo/LeetCode/tree/master/0011-container-with-most-water) |
+## String
+|  |
+| ------- |
+| [0125-valid-palindrome](https://github.com/Hyesooo/LeetCode/tree/master/0125-valid-palindrome) |
 <!---LeetCode Topics End-->
